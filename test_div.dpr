@@ -2,7 +2,8 @@
 
 uses
   Vcl.Forms,
-  umainfrm in 'umainfrm.pas' {MainForm};
+  umainfrm in 'umainfrm.pas' {MainForm},
+  LongUtils in 'LongUtils.pas';
 
 {$R *.res}
 

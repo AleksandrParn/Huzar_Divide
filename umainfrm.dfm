@@ -1,9 +1,9 @@
 object MainForm: TMainForm
   Left = 0
   Top = 0
-  BorderStyle = bsDialog
-  ClientHeight = 343
-  ClientWidth = 276
+  Caption = 'Long numbers calculator'
+  ClientHeight = 493
+  ClientWidth = 619
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,53 +18,56 @@ object MainForm: TMainForm
   TextHeight = 20
   object mStat: TMemo
     Left = 0
-    Top = 41
-    Width = 276
-    Height = 302
+    Top = 77
+    Width = 619
+    Height = 416
     Align = alClient
+    ScrollBars = ssVertical
     TabOrder = 0
-    ExplicitLeft = 6
-    ExplicitTop = 88
-    ExplicitWidth = 270
-    ExplicitHeight = 216
+    WantReturns = False
+    ExplicitWidth = 625
   end
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 276
-    Height = 41
+    Width = 619
+    Height = 77
     Align = alTop
     TabOrder = 1
-    ExplicitLeft = 84
-    ExplicitTop = 272
-    ExplicitWidth = 185
+    ExplicitWidth = 461
+    DesignSize = (
+      619
+      77)
     object eDivisible: TEdit
       Left = 12
-      Top = 8
-      Width = 69
+      Top = 7
+      Width = 500
       Height = 28
+      Anchors = [akLeft, akTop, akRight]
       NumbersOnly = True
       TabOrder = 0
-      Text = '42'
-      TextHint = '(Enter number up to 10000)'
+      Text = 
+        '1298319238192381293812391823912839128381927423847234423423423948' +
+        '2039482034'
       OnChange = eDivisibleChange
     end
     object eDivisor: TEdit
-      Left = 87
-      Top = 8
-      Width = 68
+      Left = 12
+      Top = 41
+      Width = 500
       Height = 28
+      Anchors = [akLeft, akTop, akRight]
       NumbersOnly = True
       TabOrder = 1
-      Text = '2'
-      TextHint = '(Enter number up to 10000)'
+      Text = '32487234827348237482374823748234728347 '
       OnChange = eDivisibleChange
     end
     object bCalc: TButton
-      Left = 167
+      Left = 515
       Top = 7
       Width = 94
       Height = 28
+      Anchors = [akTop, akRight]
       Caption = 'Calc'
       Default = True
       Enabled = False
