@@ -2,7 +2,7 @@
 
 interface
 
-// Aleksandr Pern: this unit made using help of algorythmes of S. Okulov's book
+// Aleksandr Pern: this unit has been made using help of algorythms of S. Okulov's book
 
 const
   luBase = 10000;   // order
