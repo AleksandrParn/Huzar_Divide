@@ -63,7 +63,7 @@ var
   I : integer;
 begin
   Result:=true;
-  for I:=A[0]-1 downto 1 do
+  for I:=A[0] downto 1 do
     if A[I]<>0 then begin
       Result:=false;
       Break
